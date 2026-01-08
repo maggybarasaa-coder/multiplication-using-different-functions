@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Project</title>
+</head>
+<body>
+    <h1>Multiplication Functions Lab</h1>
+
+    <p>Open your browser console to see results!</p>
+
+    <script>
+        // 1. Basic multiplication function
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        // 2. Multiply a number by itself (square)
+        function square(x) {
+            return x * x;
+        }
+
+        // 3. Multiply three numbers
+        function multiplyThree(a, b, c) {
+            return a * b * c;
+        }
+
+        // 4. Multiply numbers from an array
+        function multiplyArray(numbers) {
+            let result = 1;
+            for (let num of numbers) {
+                result *= num;
+            }
+            return result;
+        }
+
+        // 5. Multiplication table generator
+        function multiplicationTable(num) {
+            console.log(`Multiplication Table for ${num}`);
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${num} x ${i} = ${num * i}`);
+            }
+        }
+
+        console.log("multiply(4, 5) =", multiply(4, 5));
+        console.log("square(7) =", square(7));
+        console.log("multiplyThree(2, 3, 4) =", multiplyThree(2, 3, 4));
+        console.log("multiplyArray([2, 3, 4]) =", multiplyArray([2, 3, 4]));
+
+        multiplicationTable(6);
+    </script>
+</body>
+</html>
